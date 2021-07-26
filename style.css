@@ -1,0 +1,21 @@
+* {
+    margin: auto 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: paleturquoise;
+    display: -ms-inline-grid;
+}
+
+#people {
+    display: -ms-inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.person img {
+    border: solid;
+    color: white;
+    we
+}
