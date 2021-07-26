@@ -2,7 +2,8 @@ console.log('Here are all the available people:', people);
 
 $(document).ready(onReady);
 
-let randomNum = 0;
+let randomNum = randomNumber(0, people.length - 1);
+console.log(randomNum);
 
 function onReady(){
     renderPeople();
@@ -27,14 +28,24 @@ function renderPeople() {
     }
 }
 
+/**
+ * Person Clicked
+ * 
+ */
 function personClicked() {
-    let randomNum = randomNum(1, people.length);
-    if(randomNum === $(this).data('index')) {
-        console.log('MATCH');
+    // console.log(randomNum);
+    // console.log(Number($(this).data('index')));
+    // console.log($(this).children().data('index'));
+    // console.log($(this).data('person'));
+    if(randomNum === Number($(this).children().data('index'))) {
+        alert("Yeah! That's right");
+        // Reload the page
+        location.reload();
+    } else {
+        alert('Nope... try again');
     }
-    console.log( 'our random num' );
-    console.log('clicked ', this);
 }
+
 /**
  * Rand Number
  * returns a random number
