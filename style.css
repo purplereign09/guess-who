@@ -13,10 +13,23 @@ body {
     
 }
 
-
 .person img {
     border: solid;
     color: white;
-    width: 80px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.clicked-img  {
+    width: 20px;
+    opacity: 0.5;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.person {
+    margin: 10px;
+    position: relative;
 }

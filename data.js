@@ -1,4 +1,4 @@
-var people = [
+let people = [
   {
     name: 'Mike',
     githubUsername: 'mwerneke',
@@ -18,5 +18,5 @@ var people = [
     githubUsername: 'Renrek',
     img: 'https://avatars.githubusercontent.com/u/35666063?v=4'
   },
- 
+
 ];
